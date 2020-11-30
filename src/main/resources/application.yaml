@@ -1,0 +1,19 @@
+server: 
+    port: 8888
+              
+spring: 
+  application:
+    name: SpringConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\\workspace20\\config-server-repo
+          #uri: https://github.com/abhikgh/config-server-repo
+          cloneOnStart: true
+
+management:
+   security:
+     enabled: false
+    
+                  
